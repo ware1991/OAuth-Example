@@ -8,7 +8,7 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    {{$user->name}} are logged in!
+                    {{$user['name']}} are logged in!
                 </div>
             </div>
         </div>
