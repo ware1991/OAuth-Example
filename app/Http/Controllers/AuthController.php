@@ -28,18 +28,19 @@ class AuthController extends Controller
      * redirect them to the authenticated users homepage.
      *
      * @param string $provider OAuth Provider
-     * @return resource
+     *
+     * @return \Illuminate\View\View
      */
     public function authCallback($provider)
     {
         $user = Socialite::driver($provider)->user();
 
-        dd($user, $provider);
+//        dd($user, $provider);
 
         $authUser = $this->findOrCreateUser($user, $provider);
         Auth::login($authUser, true);
 
-        return redirect('home');
+        return view('home')->with(['user' => $user]);
     }
 
     /**
