@@ -12,7 +12,17 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style>
+        .btn-facebook {
+            background-color: #3b5998;
+            color: white;
+        }
 
+        .btn-google {
+            background-color: #dd4b39;
+            color: white;
+        }
+    </style>
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([

@@ -63,8 +63,12 @@
                         <hr>
 
                         <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <a href="{{ url('/auth/facebook') }}" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+                            <div class="col-md-3">
+                                <a href="{{ url('/auth/facebook') }}" class="btn btn-facebook"><i class="fa fa-facebook"></i> Sing in with Facebook</a>
+                            </div>
+
+                            <div class="col-md-3">
+                                <a href="{{ url('/auth/google') }}" class="btn btn-google"><i class="ga ga-google"></i> Sing in with Google</a>
                             </div>
                         </div>
                     </form>
