@@ -18,3 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+//OAuth 登入
+Route::get('auth/{provider}', 'AuthController@authRedirect');
+
+//OAuth 回傳
+Route::get('auth/{provider}/callback', 'AuthController@authCallback');
