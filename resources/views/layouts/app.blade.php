@@ -13,13 +13,18 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style>
-        .btn-facebook {
+        .btn-facebook, .btn-facebook:hover {
             background-color: #3b5998;
             color: white;
         }
 
-        .btn-google {
+        .btn-google, .btn-google:hover {
             background-color: #dd4b39;
+            color: white;
+        }
+
+        .btn-github, .btn-github:hover{
+            background-color: #24292e;
             color: white;
         }
     </style>

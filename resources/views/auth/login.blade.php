@@ -70,6 +70,10 @@
                             <div class="col-md-3">
                                 <a href="{{ url('/auth/google') }}" class="btn btn-google"><i class="ga ga-google"></i> Sing in with Google</a>
                             </div>
+
+                            <div class="col-md-3">
+                                <a href="{{ url('/auth/github') }}" class="btn btn-github"><i class="ga ga-github"></i> Sing in with GitHub</a>
+                            </div>
                         </div>
                     </form>
                 </div>

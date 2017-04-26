@@ -35,6 +35,12 @@ class AuthController extends Controller
     {
         $user = Socialite::driver($provider)->user();
 
+        //因應 GitHub 回傳的 name 有可能為 NULL，改採用 nickname
+        if (!$user->name) {
+            $user->name = $user->nickname;
+            $user->user['name'] = $user->nickname;
+        }
+
 //        dd($user, $provider);
 
         $authUser = $this->findOrCreateUser($user, $provider);
@@ -60,8 +66,8 @@ class AuthController extends Controller
         }
 
         return User::create([
-            'name'     => $user->name,
-            'email'    => $user->email,
+            'name' => $user->name,
+            'email' => $user->email,
             'provider' => $provider,
             'provider_id' => $user->id
         ]);
