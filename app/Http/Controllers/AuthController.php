@@ -41,8 +41,11 @@ class AuthController extends Controller
             $user->user['name'] = $user->nickname;
         }
 
-//        dd($user, $provider);
-
+        //因應 Twitter 的使用者陣列沒有 name ，將名字加到陣列裡
+        if ($provider == "twitter"){
+            $user->user['name'] = $user->name;
+        }
+        
         $authUser = $this->findOrCreateUser($user, $provider);
         Auth::login($authUser, true);
 

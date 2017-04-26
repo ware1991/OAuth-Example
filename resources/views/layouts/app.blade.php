@@ -27,6 +27,11 @@
             background-color: #24292e;
             color: white;
         }
+
+        .btn-twitter, .btn-twitter:hover{
+            background-color: #55acee;
+            color: white;
+        }
     </style>
     <!-- Scripts -->
     <script>
