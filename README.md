@@ -1,6 +1,8 @@
-# Laravel 登入／註冊：使用 laravel/socialite
+# Laravel 社群登入
 
-base on Laravel 5.4
+Base on Laravel 5.4
+
+Use Package: laravel/socialite
 ### 專案配置
 * 將專案 clone 下來後，至專案目錄底下執行底下命令:
     composer install
