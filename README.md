@@ -5,11 +5,13 @@ Base on Laravel 5.4
 Use Package: laravel/socialite
 ### 專案配置
 * 將專案 clone 下來後，至專案目錄底下執行底下命令:
-    composer install
-    composer update
+```
+composer install
+composer update
+```
 * 新增檔案: .env 並寫入專案相關配置,資料庫等
-* 新增 Table: php artisan migrate
-* 設定 .env 的 application key: php artisan key:generate
+* 新增 Table: ```php artisan migrate```
+* 設定 .env 的 application key: ```php artisan key:generate```
 
 ### 練習筆記
 * https://ware1991.gitbooks.io/laravel_login/content/
