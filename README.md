@@ -3,7 +3,7 @@ Laravel 登入／註冊：使用 laravel/socialite
 base on Laravel 5.4
 
 專案配置
-* 將檔案 clone 下來後，至專案目錄底下執行底下命令:
+* 將專案 clone 下來後，至專案目錄底下執行底下命令:
     composer install
     composer update
 * 新增檔案: .env 並寫入專案相關配置,資料庫等
