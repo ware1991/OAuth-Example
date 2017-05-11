@@ -13,8 +13,8 @@ composer update
 * 新增 Table: ```php artisan migrate```
 * 設定 .env 的 application key: ```php artisan key:generate```
 
-### 練習筆記
-* https://ware1991.gitbooks.io/laravel_login/content/
+### 練習筆記 GitBook
+* https://ware1991.gitbooks.io/laravel_admin-panel/content/
 
 ### 使用 API
 * Facebook Developer API
