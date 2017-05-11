@@ -1,4 +1,4 @@
-Laravel 登入／註冊：使用 laravel/socialite
+# Laravel 登入／註冊：使用 laravel/socialite
 
 base on Laravel 5.4
 ### 專案配置
