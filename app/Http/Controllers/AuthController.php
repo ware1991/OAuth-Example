@@ -45,7 +45,7 @@ class AuthController extends Controller
         if ($provider == "twitter"){
             $user->user['name'] = $user->name;
         }
-        
+
         $authUser = $this->findOrCreateUser($user, $provider);
         Auth::login($authUser, true);
 

@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet">
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -64,19 +65,19 @@
 
                         <div class="form-group">
                             <div class="col-md-3">
-                                <a href="{{ url('/auth/facebook') }}" class="btn btn-facebook"><i class="i-facebook"></i> Sing in with Facebook</a>
+                                <a href="{{ url('/auth/facebook') }}" class="btn btn-facebook"><i class="fa fa-facebook"></i> Sing in with Facebook</a>
                             </div>
 
                             <div class="col-md-3">
-                                <a href="{{ url('/auth/google') }}" class="btn btn-google"><i class="i-google"></i> Sing in with Google</a>
+                                <a href="{{ url('/auth/google') }}" class="btn btn-google"><i class="fa fa-google"></i> Sing in with Google</a>
                             </div>
 
                             <div class="col-md-3">
-                                <a href="{{ url('/auth/github') }}" class="btn btn-github"><i class="i-github"></i> Sing in with GitHub</a>
+                                <a href="{{ url('/auth/github') }}" class="btn btn-github"><i class="fa fa-github"></i> Sing in with GitHub</a>
                             </div>
 
                             <div class="col-md-3">
-                                <a href="{{ url('/auth/twitter') }}" class="btn btn-twitter"><i class="i-twitter"></i> Sing in with Twitter</a>
+                                <a href="{{ url('/auth/twitter') }}" class="btn btn-twitter"><i class="fa fa-twitter"></i> Sing in with Twitter</a>
                             </div>
                         </div>
                     </form>
