@@ -11,7 +11,7 @@ composer install
 composer update
 ```
 * 新增檔案: .env 並寫入專案相關配置,資料庫等
-* 新增 Table: ```php artisan migrate```
+* 建立資料庫: ```php artisan migrate```
 * 設定 .env 的 application key: ```php artisan key:generate```
 
 ### 練習筆記 GitBook
