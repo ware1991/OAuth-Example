@@ -15,7 +15,7 @@ composer update
 * 設定 .env 的 APP_KEY: ```php artisan key:generate```
 
 ### 練習筆記 GitBook
-* https://ware1991.gitbooks.io/laravel_admin-panel/content/
+* https://ware1991.gitbooks.io/laravel-oauth/content/
 
 ### 使用 API
 * Facebook Developer API
